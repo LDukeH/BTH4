@@ -55,11 +55,6 @@ namespace Bai05
             diem = float.Parse(diemText.Text);
             selectedKhoa = khoaComboBox.SelectedItem.ToString();
 
-            if (int.TryParse(mssv, out int n) == false)
-            {
-                MessageBox.Show("MSSV phải là số!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
             if (diem > 10 || diem < 0)
             {
                 MessageBox.Show("Điểm phải từ 0 đến 10!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
